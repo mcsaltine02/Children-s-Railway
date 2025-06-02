@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.nav .studentsNav a{
+    color: black;
+    border-bottom: 3px solid var(--darck_blue);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 91px;
+    padding-bottom: 144px;
+}
+
+.recommendations {
+    position: relative;
+    max-width: 400px;
+    z-index: 5;
+    margin: 30px;
+    margin-top: 120px;
+    left: -15%;
+}
+
+.recommendations::before {
+    content: "";
+    position: absolute;
+    width: 815px;
+    height: 815px;
+    background-color: var(--darck_blue);
+    transform: translateY(-25%) translateX(-50%);
+    z-index: 1;
+    border-radius: 50%;
+    top: 50px;
+    left: 50%;
+    transform-origin: center;
+}
+
+.recommendations > div {
+    position: relative;
+    z-index: 10;
+}
+.recommendations div p{
+    color: #dbdbdb;
+}
+.recommendations .nameR{
+    margin-bottom: 17px;
+    padding-bottom: 12px;
+    color: #ffffff;
+}
+.recommendations .buttonR{
+    display: inline;
+    margin: 10px;
+}
+.recommendations .buttonR p{
+    display: inline-block;
+    margin-top: 40px;
+    color: white;
+    padding: 10px;
+    background-color: var(--red);
+}
+
+
+.schedule{
+    position: relative;
+    border: 12px solid var(--darck_blue);
+    width: 560px;
+    height: 684px;
+    border-radius: 20px;
+}
+
+.schedule::before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    left: 138px;
+    top: 0px;
+    z-index: 10;
+    box-shadow: 6px -6px var(--darck_blue);
+    border-radius: 5px;
+}
+.schedule::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255 255 255);
+    right: 120px;
+    top: 0px;
+    z-index: 10;
+    box-shadow: -6px -6px var(--darck_blue);
+    border-radius: 5px;
+}
+
+.nameS{
+    display: inline-block;
+    position: relative;
+    color: white;
+    text-align: center;
+    border: 10px solid var(--darck_blue);
+    background-color: var(--darck_blue);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    left: 30%;
+}

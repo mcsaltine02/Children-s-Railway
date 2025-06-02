@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.nav .passengersNav a{
+    color: black;
+    border-bottom: 3px solid var(--darck_blue);
+}
+
+.main_Information{
+    margin-inline: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 240px 1fr;
+}
+.namedP{
+    color: var(--darck_blue);
+    text-align: center;
+    padding: 40px;
+    padding-bottom: 80px;
+    margin-top: 38px;
+}
+
+
+.schedule-table {
+    display: inline-block;
+    grid-column: 4/5;
+    grid-row: 1/3;
+    margin-bottom: 40px;
+    border-collapse: collapse;
+    border: 20px solid var(--darck_blue);
+    border-radius: 20px;
+}
+
+.schedule-table caption {
+    max-width: 100%;
+    background-color: var(--red);
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.schedule-table th {
+    background-color: var(--darck_blue);
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+}
+
+.schedule-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.schedule-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.schedule-table tr:hover {
+    background-color: #e6e6e6;
+}
+
+
+
+.importent{
+    display: flex;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    border-radius: 20px;
+    justify-content: space-around;
+}
+
+.price-table {
+    position: relative;
+    display: inline-block;
+    border-collapse: collapse;
+}
+
+
+.price-table caption {
+    background-color: var(--red);
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.price-table th {
+    background-color: var(--darck_blue);
+    color: #FFFFFF;
+    padding: 12px;
+    text-align: center;
+}
+
+.price-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.price-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.information{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: inline-block;
+    /* max-width: 450px; */
+}
+.namedInf{
+    background-color: var(--red);
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.namedInf h1{
+    color: white;
+}
+
+.textInf{
+    background-color: var(--darck_blue);
+}
+.textInf p{
+    padding: 10px;
+    color: #dbdbdb;
+}
+.scheme{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    text-align: center;
+    padding-top: 30px;
+}
+.scheme img{
+    width: 500px;
+}

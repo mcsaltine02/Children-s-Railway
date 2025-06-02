@@ -1,0 +1,27 @@
+footer{
+    background-color: var(--darck_blue);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+footer div .important{
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid var(--red);
+    margin-bottom: 10px;
+}
+footer div a, footer div p{
+    color: white;
+    text-decoration: none;
+    margin-top: 5px;
+} 
+footer div{
+    display: flex;
+    flex-direction: column;
+    padding-right: 75px;
+}
+
