@@ -1,11 +1,9 @@
 .children_railway {
-    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
     width: 1224px;
     margin-right: 10px;
     margin-bottom: 100px;
-    /* grid-column: 3/7; */
-    grid-row: 1/2;
-    flex-direction: column;
     anchor-name: --children_railway;
 }
 
@@ -21,8 +19,13 @@ body {
 }
 
 main {
-    display: grid;
+    display: flex;
     padding-top: 70px;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: space-around;
 }
 
 
@@ -52,6 +55,11 @@ main {
     background-color: var(--darck_blue);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+.become_railway{
+    /* position: absolute; */
+    /* position-anchor: --children_railway; */
+    position-area: right;
 }
 
 
@@ -86,6 +94,10 @@ main {
 .old_photo {
     overflow: hidden;
     inset: 0;
+}
+.new_photo div,
+.old_photo div {
+
 }
 
 .new_photo img,
@@ -148,7 +160,7 @@ main {
     background-color: var(--darck_blue);
     border: 20px solid var(--darck_blue);
     max-width: 1200px;
-    grid-row: 2/3;
+    anchor-name: --How_to_find_us;
 }
 
 .namedFU {
@@ -204,7 +216,6 @@ main {
 }
 
 .textIL {
-    display: grid;
     position: relative;
     background-color: white;
     border-radius: 20px;
@@ -272,14 +283,13 @@ main {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    grid-column: 2/3;
-    grid-row: 1/2;
     width: 390px;
     height: 510px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     flex-wrap: wrap;
     flex-direction: row;
+    anchor-name: --become_railway;
 }
 
 .linkBR {
@@ -304,8 +314,7 @@ main {
     padding-top: 60px;
     max-width: 80%;
     margin: 0 auto;
-    grid-column: 2/3;
-    grid-row: 2/3;
+    anchor-name: --block_values;
 }
 
 .Values div {
@@ -399,111 +408,8 @@ main {
     transition: transform 0.3s ease;
     background-color: var(--green);
 }
-
-@media (max-width: 1890px) {
-    .textFU {
-        max-width: 500px;
-    }
-
-    .secondFU {}
-
-    .firstFU {
-        max-width: 1000px;
-    }
-
-    .How_to_find_us {
-        max-width: 1000px;
-    }
-
-    .textIL {}
-
-    .block_values {
-        min-width: 100%;
-        position: relative;
-        right: 100px;
-    }
-
-}
-
-@media (max-width: 1758px) {
-    .block_values {
-        grid-row: 3/4;
-        grid-column: 1/3;
-        max-width: 800px;
-        min-width: 0px;
-    }
-
-    .become_railway {
-        grid-row: 2;
-        position: absolute;
-        position-anchor: --find_us;
-        position-area: right;
-    }
-
-    .How_to_find_us {
-        anchor-name: --find_us;
-        grid-column: 1/3;
-    }
-}
-
-@media (max-width:1501px) {
-    .become_railway {
-        grid-row: 3/4;
-        position: relative;
-        grid-column: 1/2;
-        anchor-name: --becom;
-        right: 340px;
-        left: -290px;
-    }
-
-    .block_values {
-        position: absolute;
-        position-anchor: --becom;
-        position-area: right;
-        left: 50px;
-    }
-
-
-}
-
-@media (max-width:1223px) {
-
-    .therstBlock,
-    .secondBlock {
-        display: flow;
-                text-align: -webkit-center;
-    }
-
-    .old_photo {
-        margin-bottom: 32px;
-    }
-
-    .headCR {
-        max-width: 640px;
-    }
-
-    .contentCR {
-        max-width: 600px;
-    }
-
-    .become_railway {
-        grid-column: 1;
-        grid-row: 1;
-        position: absolute;
-        position-anchor: --children_railway;
-        position-area: right;
-        right: 0px;
-        left: 0px;
-    }
-
-    .block_values {
-        position: relative;
-        grid-column: 1;
-    }
-
-    .children_railway {
-        grid-column: 1;
-        position: relative;
-        max-width: 640px;
+@media (max-width: 1664px) {
+    .children_railway{
+        margin-left: inherit;
     }
 }
